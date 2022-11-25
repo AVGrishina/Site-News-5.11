@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    background: url(https://img5.goodfon.ru/wallpaper/nbig/c/c6/ilia-garbuzov-gorod-tula-doma-zdaniia-kreml-vecher-osveshche.jpg) bottom no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: rgb(242, 240, 246);
+    font-size: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.news {
+    background-color: aliceblue;
+    padding: 50px 0 32px;
+}
+
+article {
+    width: 768px;
+    margin: 0 auto 32px;
+    padding: 6px 15px;
+    border-bottom: 1px solid rgb(129, 120, 120);
+}
+article:nth-child(even) {
+        background-color: rgb(149, 215, 221);
+}
+
+article:nth-child(-n+2) h2::before {
+    content: "New!";
+    color: #ff0000;
+    padding-right: 5px;
+}
+
+article a {
+    color: black;
+    text-decoration: none;
+}
+
+article a :hover {
+    color: rgb(15, 138, 179);
+}
+
+article h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 5px;    
+}
+
+.article-meta {
+    color: rgb(120, 113, 113);
+    margin-bottom: 5px;
+}
+
+article img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-align: center;    
+}
+
+footer .links {
+    margin-bottom: 50px;
+}
+
+footer .links > a {
+    color: rgb(58, 3, 73);
+    padding: 0 25px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1rem;
+    text-decoration: solid;
+    text-transform: uppercase;
+}
+
+.copyright {
+    color: rgb(37, 3, 68);
+    font-family: 'Times New Roman', Times, serif;
+}
